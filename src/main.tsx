@@ -35,7 +35,7 @@ function main() {
     zIndex: 11,
   });
 
-  const openIconName = "template-plugin-open";
+  const openIconName = "query-runner";
 
   logseq.provideStyle(css`
     .${openIconName} {

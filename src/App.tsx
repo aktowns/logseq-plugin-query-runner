@@ -13,7 +13,6 @@ function App() {
     if (!value) { return; }
 
     debounce(() => {
-      logseq.DB
       logseq.DB.datascriptQuery(value).then((res) => {
         setResult(JSON.stringify(res, null, 2));      
       }).catch((err) => {
@@ -30,8 +29,8 @@ function App() {
     [?b :block/name]
     [?b :block/properties ?prop]
     [(get ?prop :type) ?type]
-  ] 
-  `
+  ]`
+
   if (visible) {
     return (
       <main
